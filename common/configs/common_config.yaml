@@ -1,0 +1,66 @@
+# 学习项目公共配置文件
+# 此文件包含所有学习项目的通用配置
+
+# 项目根目录
+project_root: /home/neyo/workspace/code/study
+
+# 公共路径
+paths:
+  common: ${project_root}/common
+  data: ${project_root}/common/data
+  templates: ${project_root}/common/templates
+  docs: ${project_root}/common/docs
+
+# 日志配置
+logging:
+  level: INFO  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+  date_format: '%Y-%m-%d %H:%M:%S'
+  use_color: true
+  log_dir: ${project_root}/outputs/logs
+
+# 数据存储配置
+data:
+  base_dir: ${project_root}/common/data
+  stock_data: ${paths.data}/stock_data
+  economic_data: ${paths.data}/economic_data
+  reference_data: ${paths.data}/reference_data
+
+# 输出配置
+output:
+  base_dir: ${project_root}/outputs
+  data_dir: ${output.base_dir}/data
+  plots_dir: ${output.base_dir}/plots
+  reports_dir: ${output.base_dir}/reports
+
+# API配置（按需添加）
+apis:
+  # AkShare配置
+  akshare:
+    enabled: true
+    timeout: 15
+    max_retries: 3
+
+  # 其他API配置
+  # example_api:
+  #   enabled: false
+  #   api_key: your_api_key
+  #   timeout: 30
+
+# 缓存配置
+cache:
+  enabled: true
+  cache_dir: /tmp/study_cache
+  expire_hours: 24
+
+# 代理配置（如果需要）
+proxy:
+  enabled: false
+  # http_proxy: http://proxy.example.com:8080
+  # https_proxy: https://proxy.example.com:8080
+
+# 开发配置
+development:
+  debug: false
+  hot_reload: false
+  verbose: false

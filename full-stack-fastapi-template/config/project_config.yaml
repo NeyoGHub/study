@@ -1,0 +1,229 @@
+# Full Stack FastAPI Template 项目配置
+
+# 项目基本信息
+project:
+  name: "full-stack-fastapi-template"
+  version: "0.1.0"
+  description: "FastAPI全栈模板学习项目"
+  author: "Adams"
+  created_date: "2026-04-24"
+  updated_date: "2026-04-24"
+
+# 技术栈信息
+tech_stack:
+  backend:
+    framework: "FastAPI"
+    language: "Python 3.9+"
+    orm: "SQLModel"
+    database: "PostgreSQL 14+"
+    testing: "Pytest + Playwright"
+    deployment: "Docker Compose"
+
+  frontend:
+    framework: "React 18"
+    language: "TypeScript"
+    build_tool: "Vite"
+    styling: "Tailwind CSS + shadcn/ui"
+    testing: "Playwright"
+
+  devops:
+    containerization: "Docker"
+    orchestration: "Docker Compose"
+    version_control: "Git"
+    ci_cd: "GitHub Actions"
+
+# 学习计划
+study_plan:
+  phase_1:
+    name: "环境搭建"
+    duration: "1-2周"
+    tasks:
+      - "理解项目结构"
+      - "搭建开发环境"
+      - "启动项目并测试"
+      - "理解技术栈"
+
+  phase_2:
+    name: "源码学习"
+    duration: "2-4周"
+    tasks:
+      - "分析后端架构"
+      - "学习 FastAPI 核心概念"
+      - "分析前端架构"
+      - "学习 React 和 TypeScript"
+      - "理解数据库设计"
+
+  phase_3:
+    name: "实践项目"
+    duration: "4-8周"
+    tasks:
+      - "设计全栈应用"
+      - "开发后端API"
+      - "开发前端界面"
+      - "实现认证系统"
+      - "部署和优化"
+
+# 学习重点
+learning_focus:
+  backend:
+    - "FastAPI 应用结构和路由"
+    - "SQLModel 数据模型和关系"
+    - "Pydantic 数据验证"
+    - "JWT 认证和权限管理"
+    - "异步编程和性能优化"
+
+  frontend:
+    - "React 组件化开发"
+    - "TypeScript 类型系统"
+    - "Hooks API 和状态管理"
+    - "路由配置和导航"
+    - "组件库使用和定制"
+
+  deployment:
+    - "Docker 镜像构建"
+    - "Docker Compose 编排"
+    - "生产环境配置"
+    - "监控和日志"
+
+# 实践项目列表
+practice_projects:
+  todo_app:
+    name: "待办事项应用"
+    description: "基于模板的简单全栈应用"
+    features:
+      - "用户认证"
+      - "任务管理"
+      - "数据持久化"
+      - "实时更新"
+    difficulty: "入门"
+    estimated_time: "2-3周"
+
+  blog_system:
+    name: "博客系统"
+    description: "完整的博客平台"
+    features:
+      - "文章管理"
+      - "评论系统"
+      - "标签分类"
+      - "搜索功能"
+    difficulty: "中级"
+    estimated_time: "3-4周"
+
+  user_management:
+    name: "用户管理系统"
+    description: "企业级用户管理平台"
+    features:
+      - "用户注册登录"
+      - "角色权限"
+      - "个人资料"
+      - "系统设置"
+    difficulty: "高级"
+    estimated_time: "4-5周"
+
+# 学习资源
+resources:
+  official_docs:
+    fastapi: "https://fastapi.tiangolo.com/"
+    react: "https://react.dev/"
+    sqlmodel: "https://sqlmodel.tiangolo.com/"
+    docker: "https://docs.docker.com/"
+    postgresql: "https://www.postgresql.org/docs/"
+
+  recommended_books:
+    - "《FastAPI实战》"
+    - "《React权威指南》"
+    - "《Docker实战》"
+    - "《TypeScript入门》"
+
+  github_repos:
+    - "https://github.com/fastapi/full-stack-fastapi-template"
+    - "https://github.com/tiangolo/fastapi"
+    - "https://github.com/pydantic/pydantic"
+    - "https://github.com/tiangolo/sqlmodel"
+
+# 环境配置
+environment:
+  python_version: "3.9"
+  node_version: "18"
+  docker_version: "20.10+"
+  postgresql_version: "14"
+
+  backend_port: 8000
+  frontend_port: 3000
+  postgresql_port: 5432
+
+# 测试配置
+testing:
+  backend_tests:
+    framework: "pytest"
+    coverage_min: 80
+    test_paths:
+      - "backend/app/tests/"
+
+  frontend_tests:
+    framework: "playwright"
+    test_paths:
+      - "frontend/tests/"
+
+# 部署配置
+deployment:
+  development:
+    env_file: ".env"
+    compose_file: "compose.yml"
+
+  production:
+    compose_file: "compose.prod.yml"
+    env_file: ".env.prod"
+
+# 学习进度追踪
+progress:
+  started_date: "2026-04-24"
+  current_phase: "phase_1"
+  completed_tasks: []
+  in_progress_tasks: []
+  notes:
+    - "完成项目迁移"
+    - "创建学习计划"
+
+# 常见问题FAQ
+faq:
+  setup:
+    - question: "如何启动开发环境？"
+      answer: "使用 docker compose up --build"
+
+    - question: "如何查看API文档？"
+      answer: "访问 http://localhost/api/docs"
+
+    - question: "如何进行数据库迁移？"
+      answer: "使用 alembic upgrade head"
+
+  development:
+    - question: "如何添加新的API端点？"
+      answer: "在 backend/app/api/ 下创建新的路由文件"
+
+    - question: "如何添加新的React组件？"
+      answer: "在 frontend/src/components/ 下创建组件文件"
+
+  debugging:
+    - question: "如何查看后端日志？"
+      answer: "使用 docker compose logs backend"
+
+    - question: "如何调试前端？"
+      answer: "使用浏览器开发者工具"
+
+# 工具配置
+tools:
+  code_quality:
+    python_linter: "black"
+    python_formatter: "ruff"
+    typescript_linter: "eslint"
+    typescript_formatter: "prettier"
+
+  database:
+    migration_tool: "alembic"
+    admin_tool: "pgAdmin"
+
+  monitoring:
+    logs: "docker logs"
+    metrics: "prometheus"
+    tracing: "jaeger"

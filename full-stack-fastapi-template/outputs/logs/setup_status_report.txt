@@ -1,0 +1,23 @@
+============================================================
+FastAPI全栈模板环境检查报告
+============================================================
+项目路径: /home/neyo/workspace/code/study/full-stack-fastapi-template
+源码路径: /home/neyo/workspace/code/study/full-stack-fastapi-template/src/full-stack-fastapi-template
+检查时间: 2026-04-24 23:32:48
+
+环境检查结果:
+  项目路径: ✓ 存在
+  源码路径: ✓ 存在
+  Docker: ✗ 未安装
+  Docker Compose: ✗ 未安装
+  Python: ✓ 已安装
+  Node.js: ✓ 已安装
+
+状态: ⚠️ 环境不完整，需要安装Docker
+
+建议:
+  1. 安装Docker和Docker Compose
+  2. 重新运行此脚本
+  3. 或者先进行源码学习（不需要Docker）
+
+============================================================

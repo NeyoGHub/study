@@ -1,0 +1,76 @@
+# AkShare 项目配置文件
+
+# 项目基本信息
+project:
+  name: AkShare
+  version: latest
+  description: 金融数据接口库学习项目
+  github_url: https://github.com/akfamily/akshare
+  documentation_url: https://akshare.akfamily.xyz/
+
+# 路径配置
+paths:
+  project_root: /home/neyo/workspace/code/study/akshare
+  src: ${project_root}/src
+  scripts: ${project_root}/scripts
+  tests: ${project_root}/tests
+  notebooks: ${project_root}/notebooks
+  docs: ${project_root}/docs
+  outputs: ${project_root}/outputs
+  config: ${project_root}/config
+
+# 数据路径
+data:
+  stock: ${paths.outputs}/data/stock
+  fund: ${paths.outputs}/data/fund
+  economic: ${paths.outputs}/data/economic
+  cache: /tmp/akshare_cache
+
+# 输出路径
+output:
+  data: ${paths.outputs}/data
+  plots: ${paths.outputs}/plots
+  logs: ${paths.outputs}/logs
+  reports: ${paths.outputs}/reports
+
+# 日志配置
+logging:
+  level: INFO
+  log_file: ${output.logs}/akshare.log
+  format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+
+# AkShare API配置
+akshare:
+  timeout: 15
+  max_retries: 3
+  retry_delay: 1.0
+
+# 数据获取配置
+data_fetch:
+  concurrent_requests: 5
+  request_interval: 0.5
+  use_cache: true
+  cache_expire_hours: 24
+
+# 学习配置
+learning:
+  current_stage: basic_usage
+  total_stages:
+    - basic_usage
+    - source_study
+    - practice
+  progress:
+    basic_usage: 0.2
+    source_study: 0.0
+    practice: 0.0
+
+# 测试配置
+testing:
+  test_stock_symbols:
+    - "000001"  # 平安银行
+    - "600000"  # 浦发银行
+    - "000002"  # 万科A
+  test_fund_codes:
+    - "000001"
+    - "110022"
+    - "161725"
