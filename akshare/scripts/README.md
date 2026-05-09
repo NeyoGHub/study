@@ -22,6 +22,13 @@
 | `s1.2_test_index.py` | 指数接口可用性测试（含东方财富→新浪回退） | `./venv/bin/python scripts/s1.2_test_index.py` |
 | `s1.2_demo_index.py` | 指数数据综合演示（技术分析+走势对比+行业分析） | `./venv/bin/python scripts/s1.2_demo_index.py` |
 
+## 阶段1.3 - 上市公司基本面数据（已完成）
+
+| 脚本 | 说明 | 运行方式 |
+|------|------|---------|
+| `s1.3_test_fundamental.py` | 上市公司基本面测试（财务/业绩/分红/股东/估值） | `./venv/bin/python scripts/s1.3_test_fundamental.py` |
+| `s1.3_demo_fundamental.py` | 基本面综合演示（行业分布+财务指标+业绩排名+估值） | `./venv/bin/python scripts/s1.3_demo_fundamental.py` |
+
 ## 阶段2.1 - 基金数据（已完成）
 
 | 脚本 | 说明 | 运行方式 |
@@ -49,7 +56,6 @@
 
 | 阶段 | 内容 | 脚本命名 |
 |:----:|------|---------|
-| 1.3 | 上市公司基本面数据 | `s1.3_test_fundamental.py` / `s1.3_demo_fundamental.py` |
 | 3.1 | 期货数据（含现货/能源） | `s3.1_test_futures.py` / `s3.1_demo_futures.py` |
 | 3.2 | 期权数据 | `s3.2_test_option.py` / `s3.2_demo_option.py` |
 | 4.1 | 宏观经济数据 | `s4.1_test_macro.py` / `s4.1_demo_macro.py` |
