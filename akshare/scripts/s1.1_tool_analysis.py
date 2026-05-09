@@ -2,17 +2,34 @@
 """
 综合股票分析工具
 集成数据获取、技术指标计算、可视化分析
+用法: ./venv/bin/python scripts/s1.1_tool_analysis.py [股票代码]
+      默认股票代码: sz002624（完美世界）
 """
 
 import akshare as ak
 import pandas as pd
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
 from datetime import datetime
 import os
+import sys
 
-# 设置中文字体
-plt.rcParams['font.sans-serif'] = ['DejaVu Sans', 'Liberation Sans']
-plt.rcParams['axes.unicode_minus'] = False
+# 设置中文字体（直接指定字体文件路径）
+FONT_PATH = '/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc'
+if os.path.exists(FONT_PATH):
+    chinese_font = fm.FontProperties(fname=FONT_PATH, size=12)
+else:
+    chinese_font = fm.FontProperties(size=12)
+
+# 获取股票代码
+if len(sys.argv) > 1:
+    symbol = sys.argv[1]
+else:
+    symbol = "sz002624"
+print(f"分析股票: {symbol}")
+print(f"分析时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 
 print("="*70)
 print("综合股票分析工具")
@@ -24,12 +41,12 @@ PLOT_OUTPUT_DIR = "output/plots/technical"
 os.makedirs(DATA_OUTPUT_DIR, exist_ok=True)
 os.makedirs(PLOT_OUTPUT_DIR, exist_ok=True)
 
-# 输入股票代码
-symbol = input("请输入股票代码（例如：sz002624）: ").strip() or "sz002624"
-
-# 输入日期范围
-start_date = input("请输入开始日期（默认20240101）: ").strip() or "20240101"
-end_date = input("请输入结束日期（默认20260430）: ").strip() or "20260430"
+# 输入股票代码（支持命令行参数）
+symbol = symbol  # 已在顶部从命令行参数获取
+start_date = "20240101"
+end_date = "20260430"
+print(f"日期范围: {start_date} ~ {end_date}")
+print()
 
 print(f"\n正在获取 {symbol} 的数据...")
 
