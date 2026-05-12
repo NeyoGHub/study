@@ -50,6 +50,34 @@
 | `s5.2_test_crypto.py` | 加密货币接口测试 | `./venv/bin/python scripts/s5.2_test_crypto.py` |
 | `s5.2_demo_crypto.py` | 加密货币数据演示（行情+持仓报告） | `./venv/bin/python scripts/s5.2_demo_crypto.py` |
 
+## 阶段5.4 - QDII数据（已完成）
+
+| 脚本 | 说明 | 运行方式 |
+|------|------|---------|
+| `s5.4_test_qdii.py` | QDII接口测试 | `./venv/bin/python scripts/s5.4_test_qdii.py` |
+| `s5.4_demo_qdii.py` | QDII综合演示（三大类涨幅排行） | `./venv/bin/python scripts/s5.4_demo_qdii.py` |
+
+## 阶段六 - 龙虎榜+融资融券+沪深港通（已完成）
+
+| 脚本 | 说明 | 运行方式 |
+|------|------|---------|
+| `s6.1_test_market_micro.py` | 龙虎榜/两融/沪深港通测试 | `./venv/bin/python scripts/s6.1_test_market_micro.py` |
+| `s6.1_demo_market_micro.py` | 市场微观综合演示（含3张图表） | `./venv/bin/python scripts/s6.1_demo_market_micro.py` |
+
+## 阶段七 - 空气质量+汽车数据+电影（已完成）
+
+| 脚本 | 说明 | 运行方式 |
+|------|------|---------|
+| `s7.1_test_alternative.py` | 空气/汽车/财富/电影测试 | `./venv/bin/python scripts/s7.1_test_alternative.py` |
+| `s7.1_demo_alternative.py` | 另类数据综合演示（含3张图表） | `./venv/bin/python scripts/s7.1_demo_alternative.py` |
+
+## 阶段八 - 能源+利率（已完成）
+
+| 脚本 | 说明 | 运行方式 |
+|------|------|---------|
+| `s8.1_test_other.py` | 能源/利率扩展测试 | `./venv/bin/python scripts/s8.1_test_other.py` |
+| `s8.1_demo_energy_rate.py` | 能源+利率综合演示（含2张图表） | `./venv/bin/python scripts/s8.1_demo_energy_rate.py` |
+
 ---
 
 ## 规划中的阶段（脚本待创建）
