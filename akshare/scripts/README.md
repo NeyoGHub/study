@@ -94,6 +94,9 @@
 
 
 
+| `s7.2_test_movie_boxoffice.py` | 电影票房数据接口测试（AkShare原生+替代数据源） | `./venv/bin/python scripts/s7.2_test_movie_boxoffice.py` |
+| `s7.2_demo_movie_boxoffice.py` | 电影票房综合演示（小尘API+猫眼排行+可视化） | `./venv/bin/python scripts/s7.2_demo_movie_boxoffice.py` |
+
 ## 运行说明
 
 ```bash
