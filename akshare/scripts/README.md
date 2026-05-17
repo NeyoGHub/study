@@ -43,12 +43,13 @@
 | `s2.2_test_bond.py` | 债券接口测试（收益率/指数/可转债/中美利率） | `./venv/bin/python scripts/s2.2_test_bond.py` |
 | `s2.2_demo_bond.py` | 债券数据综合演示（收益率曲线+指数+可转债+期货对比） | `./venv/bin/python scripts/s2.2_demo_bond.py` |
 
-## 阶段5.2 - 加密货币数据（已完成）
+## 阶段5.2 - 加密货币数据（已替换为CoinGecko API）
+
+⚠ 注: 原AkShare自带的crypto接口仅有3个且数据量有限，已替换为CoinGecko API。
 
 | 脚本 | 说明 | 运行方式 |
 |------|------|---------|
-| `s5.2_test_crypto.py` | 加密货币接口测试 | `./venv/bin/python scripts/s5.2_test_crypto.py` |
-| `s5.2_demo_crypto.py` | 加密货币数据演示（行情+持仓报告） | `./venv/bin/python scripts/s5.2_demo_crypto.py` |
+| `test_free_crypto_api.py` | CoinGecko API完全测试（30+端点，含技术分析+可视化） | `./venv/bin/python scripts/test_free_crypto_api.py` |
 
 ## 阶段5.4 - QDII数据（已完成）
 
