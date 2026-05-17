@@ -43,13 +43,13 @@
 | `s2.2_test_bond.py` | 债券接口测试（收益率/指数/可转债/中美利率） | `./venv/bin/python scripts/s2.2_test_bond.py` |
 | `s2.2_demo_bond.py` | 债券数据综合演示（收益率曲线+指数+可转债+期货对比） | `./venv/bin/python scripts/s2.2_demo_bond.py` |
 
-## 阶段5.2 - 加密货币数据（已替换为CoinGecko API）
+## 阶段5.2 - 加密货币数据（CoinGecko API）
 
-⚠ 注: 原AkShare自带的crypto接口仅有3个且数据量有限，已替换为CoinGecko API。
+⚠ 注: 原AkShare自带的crypto接口仅有3个（crypto_js_spot/持仓报告/CME），数据量极少。已替换为 CoinGecko API，覆盖30+端点。
 
 | 脚本 | 说明 | 运行方式 |
 |------|------|---------|
-| `test_free_crypto_api.py` | CoinGecko API完全测试（30+端点，含技术分析+可视化） | `./venv/bin/python scripts/test_free_crypto_api.py` |
+| `s5.2_test_crypto.py` | CoinGecko API完全测试（30+端点，含OHLCV/技术分析/可视化） | `./venv/bin/python scripts/s5.2_test_crypto.py` |
 
 ## 阶段5.4 - QDII数据（已完成）
 
@@ -79,23 +79,13 @@
 | `s8.1_test_other.py` | 能源/利率扩展测试 | `./venv/bin/python scripts/s8.1_test_other.py` |
 | `s8.1_demo_energy_rate.py` | 能源+利率综合演示（含2张图表） | `./venv/bin/python scripts/s8.1_demo_energy_rate.py` |
 
----
+|---
 
-## 规划中的阶段（脚本待创建）
+## 全部阶段已完成
 
-| 阶段 | 内容 | 脚本命名 |
-|:----:|------|---------|
-| 3.1 | 期货数据（含现货/能源） | `s3.1_test_futures.py` / `s3.1_demo_futures.py` |
-| 3.2 | 期权数据 | `s3.2_test_option.py` / `s3.2_demo_option.py` |
-| 4.1 | 宏观经济数据 | `s4.1_test_macro.py` / `s4.1_demo_macro.py` |
-| 4.2 | 行业数据 | `s4.2_test_industry.py` / `s4.2_demo_industry.py` |
-| 5.1 | 外汇数据 | `s5.1_test_forex.py` / `s5.1_demo_forex.py` |
-| 5.3 | REITs数据 | `s5.3_test_reits.py` / `s5.3_demo_reits.py` |
-| 5.4 | QDII数据 | `s5.4_test_qdii.py` / `s5.4_demo_qdii.py` |
+所有18阶段均已研究完成。详见 `LEARNING_ROADMAP.md`。
 
-
-
-| `s7.2_test_movie_boxoffice.py` | 电影票房数据接口测试（AkShare原生+替代数据源） | `./venv/bin/python scripts/s7.2_test_movie_boxoffice.py` |
+| `s7.2_test_movie_boxoffice.py` | 电影票房数据接口测试（AkShare原生+替代数据源）
 | `s7.2_demo_movie_boxoffice.py` | 电影票房综合演示（小尘API+猫眼排行+可视化） | `./venv/bin/python scripts/s7.2_demo_movie_boxoffice.py` |
 
 ## 运行说明
