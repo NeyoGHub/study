@@ -85,6 +85,14 @@
 
 所有18阶段均已研究完成。详见 `LEARNING_ROADMAP.md`。
 
+## 阶段9.1 - OHLCV数据管道（量化数据基础设施）
+
+⚠ 基于阶段5.2加密货币数据源研究，构建双源OHLCV数据管道。
+
+| 脚本 | 说明 | 运行方式 |
+|------|------|---------|
+| `s9.1_demo_ohlcv_pipeline.py` | OHLCV双源融合管道（OKX+CoinGecko，含技术分析+可视化） | `./venv/bin/python scripts/s9.1_demo_ohlcv_pipeline.py` |
+
 | `s7.2_test_movie_boxoffice.py` | 电影票房数据接口测试（AkShare原生+替代数据源）
 | `s7.2_demo_movie_boxoffice.py` | 电影票房综合演示（小尘API+猫眼排行+可视化） | `./venv/bin/python scripts/s7.2_demo_movie_boxoffice.py` |
 
